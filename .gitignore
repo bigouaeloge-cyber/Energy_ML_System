@@ -1,0 +1,153 @@
+﻿# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Extensions C
+*.so
+
+# ===============================
+# Distribution / Packaging
+# ===============================
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===============================
+# PyInstaller
+# ===============================
+*.manifest
+*.spec
+
+# ===============================
+# Installer logs
+# ===============================
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===============================
+# Unit test / coverage reports
+# ===============================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.hypothesis/
+.pytest_cache/
+cover/
+
+# ===============================
+# Translations
+# ===============================
+*.mo
+*.pot
+
+# ===============================
+# Django / Flask
+# ===============================
+*.log
+local_settings.py
+db.sqlite3
+instance/
+.webassets-cache
+
+# ===============================
+# Scrapy
+# ===============================
+.scrapy
+
+# ===============================
+# Sphinx documentation
+# ===============================
+docs/_build/
+
+# ===============================
+# PyBuilder
+# ===============================
+target/
+
+# ===============================
+# Jupyter Notebook
+# ===============================
+.ipynb_checkpoints
+
+# ===============================
+# IPython
+# ===============================
+profile_default/
+ipython_config.py
+
+# ===============================
+# Environments
+# ===============================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===============================
+# IDE / Editors
+# ===============================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+*.swp
+*.swo
+*~
+
+# ===============================
+# mypy / type checking
+# ===============================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# ===============================
+# System files
+# ===============================
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.old
+
+# ===============================
+# Energy ML System Specific
+# ===============================
+config/api_keys.env
+*.pkl
+*.joblib
+data/raw/*.csv
+data/processed/*.csv
+data/external/*.json
+logs/*.log
+models/model_metadata.json

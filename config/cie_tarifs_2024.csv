@@ -1,0 +1,15 @@
+﻿tarif_type,description,puissance_min_kva,puissance_max_kva,tranche_min_kwh,tranche_max_kwh,prix_kwh_fcfa,abonnement_fcfa,option,prix_hp_fcfa,prix_hc_fcfa,abonnement_kva_mois,prime_fixe
+domestique_social,"Tarif social pour ménages modestes",,1.1,0,50,69,1247,,,,
+domestique_social,"Tarif social pour ménages modestes",,1.1,51,110,79,1247,,,,
+domestique_social,"Tarif social pour ménages modestes",,1.1,111,200,87,1247,,,,
+domestique_standard,"Tarif domestique standard",1.1,36,0,110,79,,,,,
+domestique_standard,"Tarif domestique standard",1.1,36,111,400,87,,,,,
+domestique_standard,"Tarif domestique standard",1.1,36,401,illimité,95,,,,,
+professionnel_bt,"Professionnel Basse Tension",1.1,250,,,101,,simple,,,
+professionnel_bt,"Professionnel Basse Tension",1.1,250,,,,,"heures_pleines_creuses",110,79,,
+professionnel_mt,"Professionnel Moyenne Tension",250,10000,,,95,,,,,2850,85000
+industriel_mt,"Industriel Moyenne Tension",250,,,,89,,standard,,,2565,85000
+industriel_mt,"Industriel Moyenne Tension",250,,,,,,"heures_pleines_creuses",95,76,2850,95000
+industriel_ht,"Industriel Haute Tension",10000,,,,83,,,,,2280,170000
+courte_utilisation,"Tarif pour usage occasionnel",,,,,,125,,,,
+prepaye,"Système prépayé (compteur à carte)",,,,,,95,,,,

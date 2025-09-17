@@ -1,0 +1,13 @@
+﻿puissance_kva,amperage,voltage,domestique_fcfa,professionnel_bt_fcfa,professionnel_bt_hphc_fcfa,usage_type,installation_type
+1.1,5,monophasé,1247,2870,3301,domestique_social,standard
+2.2,10,monophasé,1646,2870,3301,domestique_standard,standard
+3.3,15,monophasé,2045,2870,3301,domestique_standard,standard
+5.5,25,monophasé,3042,4589,5277,domestique_standard,standard
+11,50,monophasé,5537,8598,9888,domestique_standard,renforcé
+22,100,triphasé,10526,16627,19121,professionnel,triphasé
+36,160,triphasé,17018,27044,31101,professionnel,triphasé
+50,220,triphasé,,37462,43081,professionnel,triphasé
+100,440,triphasé,,74923,86162,professionnel,triphasé
+150,660,triphasé,,112385,129243,professionnel,triphasé
+200,880,triphasé,,149846,172323,professionnel,triphasé
+250,1100,triphasé,,187308,215404,professionnel_mt,moyenne_tension

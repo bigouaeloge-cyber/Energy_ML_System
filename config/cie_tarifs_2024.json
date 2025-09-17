@@ -1,0 +1,169 @@
+﻿{
+  "last_update": "2024-01-01",
+  "currency": "FCFA",
+  "country": "Côte d'Ivoire",
+  "operator": "CIE",
+  "tarifs": {
+    "domestique_social": {
+      "description": "Tarif social pour ménages modestes",
+      "puissance_max_kva": 1.1,
+      "conditions": {
+        "consommation_max_kwh": 200,
+        "usage": "domestique uniquement",
+        "sur_demande": true
+      },
+      "tranches": [
+        {"min_kwh": 0, "max_kwh": 50, "prix_fcfa": 69},
+        {"min_kwh": 51, "max_kwh": 110, "prix_fcfa": 79},
+        {"min_kwh": 111, "max_kwh": 200, "prix_fcfa": 87}
+      ],
+      "abonnement_mensuel": 1247
+    },
+    "domestique_standard": {
+      "description": "Tarif domestique standard",
+      "puissance_min_kva": 1.1,
+      "puissance_max_kva": 36,
+      "conditions": {
+        "usage": "domestique",
+        "voltage": "basse_tension"
+      },
+      "tranches": [
+        {"min_kwh": 0, "max_kwh": 110, "prix_fcfa": 79},
+        {"min_kwh": 111, "max_kwh": 400, "prix_fcfa": 87},
+        {"min_kwh": 401, "max_kwh": "infinity", "prix_fcfa": 95}
+      ],
+      "abonnements": {
+        "1.1": 1247,
+        "2.2": 1646,
+        "3.3": 2045,
+        "5.5": 3042,
+        "11.0": 5537,
+        "22.0": 10526,
+        "36.0": 17018
+      }
+    },
+    "professionnel_bt": {
+      "description": "Professionnel Basse Tension",
+      "puissance_min_kva": 1.1,
+      "puissance_max_kva": 250,
+      "conditions": {
+        "usage": "professionnel",
+        "voltage": "basse_tension"
+      },
+      "options": {
+        "simple": {
+          "prix_kwh_fcfa": 101,
+          "abonnements": {
+            "3.3": 2870,
+            "5.5": 4589,
+            "11.0": 8598,
+            "22.0": 16627,
+            "36.0": 27044,
+            "50.0": 37462,
+            "100.0": 74923,
+            "150.0": 112385,
+            "200.0": 149846,
+            "250.0": 187308
+          }
+        },
+        "heures_pleines_creuses": {
+          "heures_pleines": {
+            "horaires": ["06:00-22:00"],
+            "prix_kwh_fcfa": 110
+          },
+          "heures_creuses": {
+            "horaires": ["22:00-06:00"],
+            "prix_kwh_fcfa": 79
+          },
+          "abonnements": {
+            "3.3": 3301,
+            "5.5": 5277,
+            "11.0": 9888,
+            "22.0": 19121,
+            "36.0": 31101,
+            "50.0": 43081,
+            "100.0": 86162,
+            "150.0": 129243,
+            "200.0": 172323,
+            "250.0": 215404
+          }
+        }
+      }
+    },
+    "professionnel_mt": {
+      "description": "Professionnel Moyenne Tension",
+      "puissance_min_kva": 250,
+      "puissance_max_kva": 10000,
+      "conditions": {
+        "usage": "professionnel",
+        "voltage": "moyenne_tension"
+      },
+      "prix_kwh_fcfa": 95,
+      "abonnement_kva_mois": 2850,
+      "prime_fixe_mensuelle": 85000
+    },
+    "industriel_mt": {
+      "description": "Industriel Moyenne Tension",
+      "puissance_min_kva": 250,
+      "conditions": {
+        "usage": "industriel",
+        "voltage": "moyenne_tension"
+      },
+      "options": {
+        "standard": {
+          "prix_kwh_fcfa": 89,
+          "abonnement_kva_mois": 2565,
+          "prime_fixe_mensuelle": 85000
+        },
+        "heures_pleines_creuses": {
+          "heures_pleines": {
+            "horaires": ["06:00-22:00"],
+            "prix_kwh_fcfa": 95
+          },
+          "heures_creuses": {
+            "horaires": ["22:00-06:00"],
+            "prix_kwh_fcfa": 76
+          },
+          "abonnement_kva_mois": 2850,
+          "prime_fixe_mensuelle": 95000
+        }
+      }
+    },
+    "industriel_ht": {
+      "description": "Industriel Haute Tension",
+      "puissance_min_kva": 10000,
+      "conditions": {
+        "usage": "industriel",
+        "voltage": "haute_tension"
+      },
+      "prix_kwh_fcfa": 83,
+      "abonnement_kva_mois": 2280,
+      "prime_fixe_mensuelle": 170000
+    }
+  },
+  "taxes": {
+    "tva": 0.18,
+    "redevance_eclairage_public": {
+      "domestique": 150,
+      "professionnel_bt": 300,
+      "professionnel_mt": 500,
+      "industriel": 750
+    },
+    "contribution_energie_renouvelable": 0.01,
+    "taxe_municipale": {
+      "abidjan": 0.05,
+      "autres_villes": 0.03,
+      "rural": 0.01
+    }
+  },
+  "metadata": {
+    "source": "CIE Côte d'Ivoire",
+    "last_verified": "2024-01-15",
+    "notes": "Tarifs après hausse de 10% appliquée en janvier 2024",
+    "contact_cie": {
+      "telephone": "179",
+      "website": "www.cie.ci",
+      "email": "contact@cie.ci"
+    }
+  }
+}

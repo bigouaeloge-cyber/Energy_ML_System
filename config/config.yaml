@@ -1,0 +1,44 @@
+# Configuration systeme Energy ML
+system:
+  name: "Energy ML System"
+  version: "1.0.0"
+  environment: "development"
+
+data:
+  raw_path: "data/raw/"
+  processed_path: "data/processed/"
+  external_path: "data/external/"
+
+models:
+  available:
+    - "xgboost"
+    - "lightgbm"
+    - "random_forest"
+  default: "xgboost"
+  model_path: "models/"
+  auto_retrain: true
+  performance_threshold: 0.80
+
+
+api:
+  openweather_base_url: "http://api.openweathermap.org/data/2.5"
+  location:
+    city: "Abidjan"
+    country: "CI"
+    latitude: 5.3600
+    longitude: -4.0083
+
+dashboard:
+  title: "Interface de Données Energétiques"
+  theme: "light"
+  refresh_interval: 300  # seconds
+
+business:
+  default_electricity_price_fcfa: 150
+  target_savings_percent: 25
+  roi_target_months: 12
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/system.log"
